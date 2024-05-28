@@ -63,9 +63,13 @@ const Sidebar = (props) => {
               key: '10',
               label: <span onClick={props.onContact2Click}>Contact 2</span>,
             },
+            ],
+          },
             {
+
               key: 'sub3',
               label: <span onClick={props.onCareerClick}>Career</span>,
+              icon : < MenuUnfoldOutlined onClick={props.onCareerClick} />,
               children: [
                 {
                   key: '11',
@@ -77,9 +81,7 @@ const Sidebar = (props) => {
                 },
               ],
             },
-          ],
-        },
-      ];
+          ]
         
   const [collapsed, setCollapsed] = useState(false);
   const toggleCollapsed = () => {
